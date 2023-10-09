@@ -1,0 +1,116 @@
+.card {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.filmCardInfo {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.filmCover {
+    border-radius: 20px;
+}
+
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
+.disableNav {
+    color: #4F5B7C;
+    transition: color .3s;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.filmName {
+    font-weight: 900;
+    font-size: 65px;
+}
+
+.underName {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.orogonalFilmName {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.addToFavorites {
+    cursor: pointer;
+    text-decoration: underline;
+
+    transition: color .3s;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.555);
+    }
+}
+
+
+.circularChart {
+
+    --color: rgb(clamp(141, 40%, 0), clamp(0, 40%, 165), 0);
+
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(75, 203, 54, 0.30);
+    border-radius: 50%;
+}
+
+.circleBg {
+    fill: none;
+    stroke: rgba(75, 203, 54, 0.30);
+    stroke-width: 4;
+}
+
+.percentage {
+    fill: #fff;
+    font-weight: bold;
+    font-size: 10px;
+    text-anchor: middle;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 4px;
+    /* stroke-linecap: round; */
+    stroke: #4BCB36;
+    transform-origin: 50% 50%;
+    transform: rotate(-180deg);
+}
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description {
+    line-height: 180%;
+}
+
+.playButton {
+    background-color: transparent;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}

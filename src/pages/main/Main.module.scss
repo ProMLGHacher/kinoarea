@@ -1,0 +1,43 @@
+.main {
+    
+}
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 48px;
+    white-space: nowrap;
+}
+
+.divider {
+    height: 2px;
+    width: 10%;
+    background-color: white;
+}
+
+.filters {
+    white-space: nowrap;
+    display: flex;
+    gap: 40px;
+}
+
+.filter {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: color 0.3s;
+
+    &:hover {
+        color: rgba(255, 255, 255, 0.35);
+    }
+}
